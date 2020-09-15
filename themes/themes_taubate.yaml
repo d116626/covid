@@ -1,0 +1,259 @@
+# Add custom colorscales here!
+my_scale: ['#DA4657', '#054257', '#49B5BD', '#B1F200', '#FEB916']
+
+# Source: https://learnui.design/tools/data-color-picker.html
+learn_ui_design: ['#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'] 
+
+# Impulso visual ID:
+impulso: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+
+# pale
+pale: ['#24306C',"#BB4140",'#559F7A','#2C0226' ,'#585858']
+
+#novo
+novo: ['#FA7609','#0D485A','#1D8179','#585858']
+
+redAndBlue: ['#DF718A','#5DB7EB']
+
+#novo
+taubate:
+  data:
+    line_width: 5
+    marker:
+      size: 7
+      color: 
+    hoverlabel_size: 22
+
+  barmode: 'stack'
+  hovermode: 'x unified'
+
+  colors: ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  
+  margin :
+    l: 0
+    r: 0
+    t: 15
+    b: 0
+    
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x: '%d/%m' #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    orientation: 'h' #vertical
+    traceorder: 'normal'
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+  source:
+    text: ' '
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: 0.5
+      y: -0.32
+    
+  altura: 
+  largura:
+
+#novo
+taubate_pie:
+
+  hovermode: 'x unified'
+
+  data:
+    line_width: 2
+    marker:
+      size: 7
+      color: '#000000'
+    hoverlabel_size: 25
+
+  barmode: 'group'
+
+  # colors: ['#5768D2', '#C51162']
+  colors: ['#DF718A', '#5DB7EB']
+
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  
+  margin :
+    l: 0
+    r: 0
+    t: 10
+    b: 0
+    
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x: '%d/%m' #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 16
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reverse or normal
+    orientation: 'h' #vertical
+    position:
+      x: 0.5
+      y:
+      xanchor: "center"
+      yanchor: 'top'
+
+  source:
+    text: ' '
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: 0.5
+      y: -0.32
+    
+  altura: 
+  largura: 
+
+
+taubate_faixas:
+  hovermode: 'y unified'
+
+
+  data:
+    line_width: 2
+    marker:
+      size: 7
+      color: 'red'
+    hoverlabel_size: 25
+
+  barmode: 'stack'
+
+  colors: ['blue', 'red']
+  # ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+
+
+  margin :
+    l: 20
+    r: 20
+    t: 20
+    b: 20
+    
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 18
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x:  #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 16
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reverse or normal
+    orientation: 'h' #vertical
+    position:
+      x:
+      y:
+      xanchor: 
+      yanchor: 
+  source:
+    text: ' '
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: 0.5
+      y: -0.32
+    
+  altura: 
+  largura:
+
+
+
+

@@ -1,0 +1,133 @@
+
+redAndBlue: ['#DF718A','#5DB7EB']
+
+
+all_world_dash:
+  data:
+    line_width     : 5
+    marker_size    : 7
+    hoverlabel_size: 22
+  
+  barmode: 'group'
+
+
+  colors: ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor : 'rgba(0,0,0,0)'
+  
+
+  title:
+    family: 'Courier New, monospace'
+    color : '#000000'
+    size  : 18
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color : '#000000'
+    size  : 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family    : 'Courier New, monospace'
+    color     : '#000000'
+    size      : 12
+    gridcolor : '#000000'
+    tickformat: 
+      x: #'%d/%m'
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family     : 'Courier New, monospace'
+    color      : '#000000'
+    size       : 10
+    bgcolor    : 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    position   : 
+      x: 0.05
+      y:
+
+  source  : 
+    text    : '' #'Fonte: Worldometers'
+    family  : 'Courier New, monospace'
+    size    : 12
+    color   : '#000000'
+    position:
+      x       : -0.1
+      y       : -0.14
+    
+  altura :
+  largura: 
+
+
+by_country_dash:
+  data:
+    line_width     : 10
+    marker_size    : 15
+    hoverlabel_size: 22
+  
+  barmode: 'stack'
+
+  colors     : ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor : 'rgba(0,0,0,0)'
+  
+
+  title:
+    family: 'Courier New, monospace'
+    color : '#000000'
+    size  : 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color : '#000000'
+    size  : 24
+  
+  #AXIS VALUES
+  axis_legend:
+    family    : 'Courier New, monospace'
+    color     : '#000000'
+    size      : 26
+    gridcolor : '#000000'
+    tickformat: 
+      x: '%d/%m'
+      y:
+    type:
+      x: #lin or log
+      y:
+
+
+  legend:
+    family     : 'Courier New, monospace'
+    color      : '#000000'
+    size       : 22
+    bgcolor    : 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    position   : 
+      x: 0.01
+      y: 0.975
+
+  source:
+    text    : 'Fonte: Worldometers'
+    family  : 'Courier New, monospace'
+    size    : 16
+    color   : '#000000'
+    position: 
+      x: -0.01
+      y: -0.14
+    
+  altura : 720
+  largura: 

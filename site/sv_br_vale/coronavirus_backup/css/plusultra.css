@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+html {
+    font-size: 50%;
+    background-color: #fafbfd;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+}
+
+body {
+    /* max-width: 1200px; */
+    overflow-x: hidden;
+    /* or whatever width you want */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.brasil-card {
+    padding-left: 1.0%;
+    padding-right: 1.0%;
+    margin-top: 1.5%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 1.0%;
+    text-align: left;
+}
+
+.azul {
+    background-color: burlywood;
+}
+
+.text-mapa {
+    text-align: center;
+}
+
+.support-top-details-text {
+    font-family: Montserrat, sans-serif;
+    color: #535252;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.support-top-details-text-2 {
+    font-family: Montserrat, sans-serif;
+    color: #535252;
+    font-size: 18px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.support-top-heading {
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #535252;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .support-top-details-text {
+        text-align: left;
+    }
+    .support-top-heading {
+        text-align: left;
+        font-size: 45px;
+    }
+    .support-top-details-text-2 {
+        text-align: end;
+    }
+}
+
+.text-title {
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #535252;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+@media (max-width:600px) {
+    .text-title {
+        font-size: 18px;
+    }
+    .col-space {
+        padding-bottom: 25px;
+    }
+}
+
+.cards {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.5%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 1.0%;
+    text-align: center;
+}
+
+.card-dias {
+    border-radius: 5px;
+    background-color: #007482;
+}
+
+.casos {
+    color: #0393D0
+}
+
+.obitos {
+    color: #EF4136
+}
+
+.card-casos {
+    border-radius: 5px;
+    background-color: #0393D0;
+}
+
+.card-obitos {
+    border-radius: 5px;
+    background-color: #EF4136;
+}
+
+.card-recover {
+    border-radius: 5px;
+    background-color: #00bd7e;
+}
+
+.card-top {
+    text-align: center;
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-mid {
+    text-align: center;
+    padding: .5rem;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.card-bot {
+    text-align: center;
+    padding: .5rem;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    .card-top {
+        font-size: 1.5rem;
+    }
+    .card-mid {
+        font-size: 5rem;
+    }
+    .card-bot {
+        font-size: 3rem;
+    }
+}
+
+.mapa {
+    margin-left: 1.5%;
+    margin-right: 0.48%;
+    margin-bottom: 1.0%;
+    margin-top: 3%;
+    /* width: 750px; */
+}
+
+.margem-mapa {
+    padding-top: 40px;
+}
+
+.responsive-map iframe {
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+    .responsive-map iframe {
+        height: 700px;
+    }
+}

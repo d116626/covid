@@ -1,0 +1,50 @@
+embed_html:
+    path: "../site/sv_taubate/coronataubate/"
+    model_name: "model_index.html"
+    save_name : "index.html"
+
+
+
+taubate_cumulative:
+    path_save: '../site/sv_taubate/coronataubate/images/cumulative/'
+    save_name: 'taubate_casos_cumulativo.html' ##get a format by var_options
+    color_options: taubate'
+
+taubate_daily:
+    path_save: '../site/sv_taubate/coronataubate/images/daily/'
+    save_name: 'taubate_casos_diarios.html'
+    color_options: 'taubate'
+
+
+taubate_map:
+    path_save: '../site/sv_taubate/coronataubate/images/map/'
+    save_name: 'taubate_map.html'
+
+
+taubate_faixa_etaria:
+    path_save: '../site/sv_taubate/coronataubate/images/perfil/'
+    save_name: 'taubate_confirmados_faixa_etaria.html'
+
+taubate_sexo:
+
+    path_save: '../site/sv_taubate/coronataubate/images/perfil/'
+    save_name: 'taubate_confirmados_sexo.html'
+
+# vale_map:
+#     path_save: '../maps/'
+#     save_name: 'mapa_vale.html'
+#     bucket: 'sv-covid19'
+#     bucket_folder: "taubate/maps"
+
+
+# ms_table:
+#     rename_cols: {
+#         'região':"regiao", 
+#         'estado':'state',
+#         "data":'date',
+#         'casosNovos':'new_cases',
+#         'casosAcumulados':'confirmed',
+#         'obitosNovos':'new_deaths',
+#         'obitosAcumulados':'deaths'
+#         }
+#     date_format: "%d/%m/%Y"

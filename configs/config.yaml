@@ -1,0 +1,59 @@
+embed_html:
+    path: "../site/sv_br_vale/coronavirus/"
+    model_name: "model_index.html"
+    save_name : "index.html"
+    
+
+br_cumulative:
+    path_save: '../site/sv_br_vale/coronavirus/images/cumulative/'
+    save_name: 'brasil_por_estado_{}.html' ##get a format by var_options
+
+br_daily:
+    path_save: '../site/sv_br_vale/coronavirus/images/daily/'
+    ### var and save_name
+    var_options: {'cases':'brasil_lin_total.html','deaths':'brasil_lin_mortes.html'}
+    color_options: 'novo_storage'
+    selection: 'BRASIL'
+
+
+br_map:
+    path_save: '../maps/'
+    save_name: 'cidades_estados.html'
+
+
+
+vale_map:
+    path_save: '../site/sv_br_vale/coronavirus/images/maps/'
+    save_name: 'vale_map.html'
+    col_rename: 
+        {
+        'municipio'             : 'Município',
+        'confirmados'           : 'Confirmados',
+        'confirmados_internados': 'Confirmados Internados',
+        'mortes'                : 'Óbitos',
+        'suspeitas'             : 'Suspeitos',
+        'suspeitas_internados'  : 'Suspeitos Internados',
+        'mortes_investigação'   : 'Óbitos Suspeitos',
+        'descartados'           : 'Descartados',
+        'recuperados'           : 'Recuperados',
+        'internados'            : 'Internados',
+        'fonte'                 : 'Fonte',
+        "ocupacao_enfermaria"   : 'Taxa de Ocupação Enfermaria',
+        "ocupacao_uti"          : 'Taxa de Ocupação UTI',
+        'ultimo_boletim'        : 'Data do Boletim',
+        }
+
+
+
+ms_table:
+    rename_cols: {
+        'região':"regiao", 
+        'estado':'state',
+        "data":'date',
+        'casosNovos':'new_confirmed',
+        'casosAcumulado':'confirmed',
+        'obitosNovos':'new_deaths',
+        'obitosAcumulado':'deaths'
+        }
+    date_format: ["%Y-%m-%d", "%d/%m/%Y"]
+    # date_format: "%d/%m/%Y"

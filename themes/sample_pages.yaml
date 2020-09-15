@@ -1,0 +1,950 @@
+# Add custom colorscales here!
+my_scale: ['#DA4657', '#054257', '#49B5BD', '#B1F200', '#FEB916']
+
+# Source: https://learnui.design/tools/data-color-picker.html
+learn_ui_design: ['#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'] 
+
+# Impulso visual ID:
+impulso: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+
+# pale
+pale: ['#24306C',"#BB4140",'#559F7A','#2C0226' ,'#585858']
+
+#novo
+novo: ['#FA7609','#0D485A','#1D8179','#585858']
+
+redAndBlue: ['#DF718A','#5DB7EB']
+
+all_countrys:
+  vars:
+    new_deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 5
+      roling_window: 7
+
+    deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 100
+      roling_window: 1
+    
+    new_confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 100
+      roling_window: 7
+
+    confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 100
+      roling_window: 1
+
+    # recovered:
+    #   title: ''
+    #   x_title: 'DIAS DESDE O PRIMEIRO RECUPERADO'
+    #   y_title: 'RECUPERADOS CONFIRMADOS'
+    #   since_var: 100
+
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+
+  hovermode: 'x' #'x unified'
+  barmode: 'group'
+
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    scale:
+      linear:
+        x:
+          type: 'linear'
+          tickformat: 'n'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+      log:
+        x:
+          type: 'linear'
+          tickformat: 'n'
+        y:
+          type: 'log'
+          tickformat:
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 8
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'normal' #reverse or normal
+    position:
+      x:
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+unique_country_cum:
+  vars:
+
+    deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    active: 
+      nome: 'Ativos'
+      color: '#0393D0'
+
+    recovered:
+      nome: 'Recuperados'
+      color: '#00bd7e'
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 22
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+unique_country_daily:
+  vars:
+
+    new_deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    new_active: 
+      nome: 'Ativos'
+      color: '#0393D0'
+
+    new_recovered:
+      nome: 'Recuperados'
+      color: '#00bd7e'
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 22
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+
+
+brasil_vis_cumulative:
+  vars:
+    deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 100
+      roling_window: 1
+      in_cities: ['all']
+
+    new_deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 1
+      roling_window: 3
+      in_cities: ['all']
+
+
+    confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 100
+      roling_window: 1
+      in_cities: ['all']
+
+    new_confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 1
+      roling_window: 3
+      in_cities: ['all']
+
+
+
+  data:
+    line_width: 3
+    marker_size: 4
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+    colors: ['#516FA7','#FB8B00','#F03651','#63BBB2','#2BAF4E','#EBD43A','#BA69A0','#FF8CA3','#9E735D','#B9AEAA']
+
+  
+
+  hovermode: 'x' #'x unified'
+  barmode: 'group'
+
+
+
+
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+      log:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'log'
+          tickformat:
+    
+    
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'v' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'normal' #reverse or normal
+    position:
+      x:
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+  
+
+brasil_vis_daily:
+  vars:
+    new_deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    new_confirmed: 
+      nome: 'Confirmados'
+      color: '#0393D0'
+
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+brasil_vis_cum:
+  vars:
+    deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    confirmed: 
+      nome: 'Confirmados'
+      color: '#0393D0'
+
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+
+    
+
+cities:
+  vars:
+    deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 100
+      roling_window: 1
+      in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
+
+    new_deaths:
+      title: ''
+      x_title: ''
+      y_title: 'Óbitos Confirmados'
+      since_var: 1
+      roling_window: 7
+      in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
+
+
+    confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 100
+      roling_window: 1
+      in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
+
+    new_confirmed:
+      title: ''
+      x_title: ''
+      y_title: 'Casos Confirmados'
+      since_var: 1
+      roling_window: 7
+      in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
+
+
+  data:
+    line_width: 3
+    marker_size: 4
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+    colors: ['#516FA7','#FB8B00','#F03651','#63BBB2','#2BAF4E','#EBD43A','#BA69A0','#FF8CA3','#9E735D','#B9AEAA']
+
+  
+
+  hovermode: 'x' #'x unified'
+  barmode: 'group'
+
+
+
+
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+      log:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'log'
+          tickformat:
+    
+    
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'normal' #reverse or normal
+    position:
+      x:
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+  
+
+cities_vis_daily:
+  vars:
+    new_deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    new_confirmed: 
+      nome: 'Confirmados'
+      color: '#0393D0'
+
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+cities_vis_cum:
+  vars:
+    deaths: 
+      nome: 'Óbitos'
+      color: '#EF4136'
+
+    confirmed: 
+      nome: 'Confirmados'
+      color: '#0393D0'
+
+    
+  data:
+    line_width: 6
+    marker_size: 8
+    hoverlabel_size: 15
+    hoverlabel_bgcolor: 'rgba(0,0,0,0)'
+  
+  barmode: 'stack'
+  hovermode: 'x' #'x unified'
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 32
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    x:
+      title: ''
+    y:
+      title: 'Casos Confirmados'
+
+    scale:
+      linear:
+        x:
+          type: 'date'
+          tickformat: '%d/%m'
+        y:
+          type: 'linear'
+          tickformat: 'n'
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    orientation: 'h' #vertical
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reversed or normal
+    position:
+      x: 
+      y:
+      xanchor:
+      yanchor:
+
+
+  source:
+    text: ''
+    family: 'Courier New, monospace'
+    size: 16
+    color: '#000000'
+    position:
+      x: -0.04
+      y: -0.14
+    
+  altura:
+  largura: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
