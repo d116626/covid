@@ -4070,3 +4070,18 @@ Traceback (most recent call last):
     initial_files = listdir(path)
 FileNotFoundError: [Errno 2] No such file or directory: '/mnt/AEB0CCA7B0CC777D/Jlab/gabinete_sv/covid/notebookscovid19/data/ministerio_da_saude'
 [WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.27.0/geckodriver] found in cache
+START
+World Data Done
+IN
+OUT
+downloaded
+Traceback (most recent call last):
+  File "run.py", line 659, in <module>
+    main()
+  File "run.py", line 647, in main
+    run_corona_br()
+  File "run.py", line 106, in run_corona_br
+    io.update_ms_data()
+  File "../scripts/io.py", line 310, in update_ms_data
+    new_file = [file for file in now_files if file not in initial_files][0]
+IndexError: list index out of range

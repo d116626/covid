@@ -3101,3 +3101,5 @@ JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.js
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1600294520391	Marionette	INFO	Listening on port 41347
 1600294520426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600294574673	Marionette	INFO	Stopped listening on port 41347
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile6ZzYjw/protections.sqlite
