@@ -4069,3 +4069,4 @@ Traceback (most recent call last):
   File "../scripts/io.py", line 268, in update_ms_data
     initial_files = listdir(path)
 FileNotFoundError: [Errno 2] No such file or directory: '/mnt/AEB0CCA7B0CC777D/Jlab/gabinete_sv/covid/notebookscovid19/data/ministerio_da_saude'
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.27.0/geckodriver] found in cache
