@@ -1,56 +1,18 @@
 #!/bin/bash
 echo "=====================================run codes====================================="
 echo " "
-cd covid19/notebooks/
-python run.py
+cd covid/notebooks/
+#python run.py
 cd ../../
 echo "===================================================================================="
 echo " "
 echo " "
 
-echo "=====================================sample_pages====================================="
-echo " "
-cd sample_pages
-rm -f .gitignore
-find * -size +49M | cat >> .gitignore
-echo "adding"
-echo " "
-git add .
-echo "commit"
-git commit -m "all"
-echo " "
-echo "push"
-echo " "
-git push origin master
 
-echo "===================================================================================="
-echo " "
-echo " "
-
-echo "=====================================covid19====================================="
-echo " "
-cd ../covid19
-rm -f .gitignore
-find * -size +49M | cat >> .gitignore
-echo "adding"
-echo " "
-git add .
-echo "commit"
-echo " "
-git commit -m "all"
-echo " "
-echo "push"
-echo " "
-git push origin master
-
-
-echo "===================================================================================="
-echo " "
-echo " "
 
 echo "=====================================raioX Vale====================================="
 echo " "
-cd ../raiox_vale
+cd raiox_vale
 rm -f .gitignore
 find * -size +49M | cat >> .gitignore
 echo "adding"
@@ -218,5 +180,43 @@ echo "==========================================================================
 echo " "
 echo " "
 
+echo "=====================================sample_pages====================================="
+echo " "
+cd ../sample_pages
+rm -f .gitignore
+find * -size +49M | cat >> .gitignore
+echo "adding"
+echo " "
+git add .
+echo "commit"
+git commit -m "all"
+echo " "
+echo "push"
+echo " "
+git push origin master
 
+echo "===================================================================================="
+echo " "
+echo " "
+
+echo "=====================================covid19====================================="
+echo " "
+cd ../covid
+rm -f .gitignore
+find * -size +49M | cat >> .gitignore
+echo "adding"
+echo " "
+git add .
+echo "commit"
+echo " "
+git commit -m "all"
+echo " "
+echo "push"
+echo " "
+git push origin master
+
+
+echo "===================================================================================="
+echo " "
+echo " "
 

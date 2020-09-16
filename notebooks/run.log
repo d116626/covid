@@ -4057,3 +4057,15 @@ Traceback (most recent call last):
   File "/home/m/anaconda3/lib/python3.7/site-packages/requests/models.py", line 679, in generate
     raise ChunkedEncodingError(e)
 requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionResetError(104, 'Connection reset by peer')", ConnectionResetError(104, 'Connection reset by peer'))
+START
+World Data Done
+Traceback (most recent call last):
+  File "run.py", line 659, in <module>
+    main()
+  File "run.py", line 647, in main
+    run_corona_br()
+  File "run.py", line 106, in run_corona_br
+    io.update_ms_data()
+  File "../scripts/io.py", line 268, in update_ms_data
+    initial_files = listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/AEB0CCA7B0CC777D/Jlab/gabinete_sv/covid/notebookscovid19/data/ministerio_da_saude'
