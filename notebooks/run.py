@@ -644,8 +644,8 @@ def main():
     run_corona_mundo()
     print('World Data Done')
     
-    run_corona_br()
-    print('BR Data Done')
+    # run_corona_br()
+    # print('BR Data Done')
 
     run_coronaBR()
     print('BR Map Done')

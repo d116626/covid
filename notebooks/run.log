@@ -4085,3 +4085,55 @@ Traceback (most recent call last):
   File "../scripts/io.py", line 310, in update_ms_data
     new_file = [file for file in now_files if file not in initial_files][0]
 IndexError: list index out of range
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.27.0/geckodriver] found in cache
+START
+World Data Done
+IN
+OUT
+downloaded
+Traceback (most recent call last):
+  File "run.py", line 659, in <module>
+    main()
+  File "run.py", line 647, in main
+    run_corona_br()
+  File "run.py", line 106, in run_corona_br
+    io.update_ms_data()
+  File "../scripts/io.py", line 310, in update_ms_data
+    new_file = [file for file in now_files if file not in initial_files][0]
+IndexError: list index out of range
+0it [00:00, ?it/s]1it [00:00,  5.11it/s]
+0it [00:00, ?it/s]1it [00:03,  3.79s/it]
+0it [00:00, ?it/s]1it [00:05,  5.01s/it]
+0it [00:00, ?it/s]1it [00:05,  5.12s/it]
+0it [00:00, ?it/s]1it [00:04,  4.74s/it]
+0it [00:00, ?it/s]1it [00:04,  4.24s/it]
+0it [00:00, ?it/s]1it [00:04,  4.39s/it]
+START
+World Data Done
+Vale table, Done!
+Embed html uploaded!
+Start Br Map
+Generate and save vale map..
+Map Done!
+DONE
+BR Map Done
+Vale Data Done
+2020-09-18
+0it [00:00, ?it/s]1it [00:00,  4.90it/s]
+0it [00:00, ?it/s]1it [00:04,  4.70s/it]
+0it [00:00, ?it/s]1it [00:05,  5.06s/it]
+0it [00:00, ?it/s]1it [00:03,  3.51s/it]
+0it [00:00, ?it/s]1it [00:05,  5.97s/it]
+0it [00:00, ?it/s]1it [00:04,  4.76s/it]
+0it [00:00, ?it/s]1it [00:04,  4.84s/it]
+START
+World Data Done
+Vale table, Done!
+Embed html uploaded!
+Start Br Map
+Generate and save vale map..
+Map Done!
+DONE
+BR Map Done
+Vale Data Done
+2020-09-21
