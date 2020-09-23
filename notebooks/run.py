@@ -626,13 +626,38 @@ def run_coronaVale():
     ddf['last_update'] = max(ddf['datahora'])
     ddf_last = ddf[mask].rename(columns={"drs_name":"DRS"})
 
+    
+    
+    
+    ##########   ONLY EVOLUTION ##########
+    # get casos e internacoes
+    casos, sp_casos = manipulation_sp.padronize_casos(casos_full)
+    internacoes, sp_internacoes = manipulation_sp.padronize_internacoes(internacoes)
 
-        
+    #get plano sp fases by region
+    planosp = io.read_sheets('Plano SP','df')
+    planosp['date'] = pd.to_datetime(planosp['date'], format="%d/%m/%Y")
+    colors = {"1":"red","2":"orange","3":"yellow","4":"green"}
+    planosp['fase'] = planosp['fase'].map(colors)
+    colors = {"parcial":"lightgrey","final":"black"}
+    planosp['att'] = planosp['att'].map(colors)
+
+
+    final = manipulation_sp.padronize_planosp_parameters(sp_casos,sp_internacoes)
+    
+    
+    cols = ['datahora','nome_drs','casos_var','internacoes_var','obitos_var','internacoes_14d_pc','obitos_14d_pc']
+    ev = final[cols]
+    dd = manipulation_sp.add_fases_only_evolution(ev).sort_values(by=['DRS','Data'])
+    dd.columns = ['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes','var_obitos']
     #upload to drive
     from scripts import io
+    print(dd.columns)
+    
     io.to_gbq(ddf,'plano_sp','covid','gabinete-sv', if_exists='replace')
     io.to_gbq(ddf_last,'plano_sp_last','covid','gabinete-sv', if_exists='replace')
-        
+    io.to_gbq(dd,'plano_sp_evolution','covid','gabinete-sv', if_exists='replace')
+
         
         
     
