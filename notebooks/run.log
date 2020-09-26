@@ -4155,3 +4155,116 @@ DONE
 BR Map Done
 Vale Data Done
 2020-09-22
+0it [00:00, ?it/s]1it [00:00,  5.75it/s]
+0it [00:00, ?it/s]1it [00:05,  5.74s/it]
+START
+World Data Done
+Vale table, Done!
+Embed html uploaded!
+Start Br Map
+Generate and save vale map..
+Map Done!
+DONE
+BR Map Done
+Traceback (most recent call last):
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connection.py", line 371, in connect
+    ssl_context=context,
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 384, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/m/anaconda3/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/home/m/anaconda3/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/home/m/anaconda3/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1059: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/m/anaconda3/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/m/anaconda3/lib/python3.7/site-packages/google/auth/transport/requests.py", line 183, in __call__
+    method, url, data=body, headers=headers, timeout=timeout, **kwargs
+  File "/home/m/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run.py", line 684, in <module>
+    main()
+  File "run.py", line 678, in main
+    run_coronaVale()
+  File "run.py", line 540, in run_coronaVale
+    io.to_gbq(vale,'rt_vale_covid','covid','gabinete-sv', if_exists='replace')
+  File "../scripts/io.py", line 64, in to_gbq
+    credentials = _get_credentials_gbq(),
+  File "../scripts/io.py", line 43, in _get_credentials_gbq
+    auth_local_webserver=True,
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pydata_google_auth/auth.py", line 245, in get_user_credentials
+    credentials = credentials_cache.load()
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pydata_google_auth/cache.py", line 190, in load
+    return _load_user_credentials_from_file(self._path)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pydata_google_auth/cache.py", line 88, in _load_user_credentials_from_file
+    return _load_user_credentials_from_info(credentials_json)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pydata_google_auth/cache.py", line 53, in _load_user_credentials_from_info
+    credentials.refresh(request)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/google/oauth2/credentials.py", line 198, in refresh
+    self._scopes,
+  File "/home/m/anaconda3/lib/python3.7/site-packages/google/oauth2/_client.py", line 248, in refresh_grant
+    response_data = _token_endpoint_request(request, token_uri, body)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/google/oauth2/_client.py", line 105, in _token_endpoint_request
+    response = request(method="POST", url=token_uri, headers=headers, body=body)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/google/auth/transport/requests.py", line 188, in __call__
+    six.raise_from(new_exc, caught_exc)
+  File "<string>", line 3, in raise_from
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+0it [00:00, ?it/s]1it [00:00,  5.20it/s]
+0it [00:00, ?it/s]1it [00:06,  6.17s/it]
+0it [00:00, ?it/s]1it [00:04,  4.60s/it]
+0it [00:00, ?it/s]1it [00:04,  4.40s/it]
+0it [00:00, ?it/s]1it [00:04,  4.24s/it]
+0it [00:00, ?it/s]1it [00:08,  8.43s/it]
+0it [00:00, ?it/s]1it [00:03,  3.93s/it]
+0it [00:00, ?it/s]1it [00:04,  4.67s/it]
+START
+World Data Done
+Vale table, Done!
+Embed html uploaded!
+Start Br Map
+Generate and save vale map..
+Map Done!
+DONE
+BR Map Done
+Index(['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes',
+       'var_obitos'],
+      dtype='object')
+Vale Data Done
+2020-09-24

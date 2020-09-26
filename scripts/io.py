@@ -54,18 +54,7 @@ def to_gbq(df,
     """
     write a dataframe in Google BigQuery
     """
-
-    destination_table = f'{schema_name}.{table_name}'
-
-    pandas_gbq.to_gbq(
-        df,
-        destination_table,
-        project_id,
-        credentials = _get_credentials_gbq(),
-        **kwargs
-    )
-
-def read_gbq(query, 
+options=options,firefox_profile=profile, executable_path = GeckoDriverManager().install()
         project_id='gabinete-sv', 
         **kwargs):
     """
