@@ -48,24 +48,24 @@ def _get_credentials_gbq():
 
 def to_gbq(df, 
         table_name, 
-        schema_name = 'redes_sociais',
-        project_id  = 'gabinete-sv',
+        schema_name = 'simula_corona',
+        project_id  = 'robusta-lab',
         **kwargs):
     """
     write a dataframe in Google BigQuery
-    """
-options=options,firefox_profile=profile, executable_path = GeckoDriverManager().install()
-        project_id='gabinete-sv', 
-        **kwargs):
-    """
-    write a dataframe in Google BigQuery
+    , if_exists='replace'
     """
 
-    return pandas_gbq.read_gbq(
-        query,
+    destination_table = f'{schema_name}.{table_name}'
+
+    pandas_gbq.to_gbq(
+        df,
+        destination_table,
         project_id,
-        credentials=_get_credentials_gbq(),
-        **kwargs)
+        credentials = _get_credentials_gbq(),
+        **kwargs
+    )
+
 
 
 
