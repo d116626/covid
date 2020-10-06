@@ -220,7 +220,7 @@ def taubate_pie(confirmados, themes, config, save=False):
     return fig
 
 
-def get_map_taubate(df,status_adjusts, config_map, save=False):
+def get_map_taubate(df,status_adjusts, config_map,r_factor ,save=False,):
     
     # tiles = '     https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=98b606377e0b4514a106725fe3df2e52 '
     # attr= '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -254,7 +254,7 @@ def get_map_taubate(df,status_adjusts, config_map, save=False):
             bairro_row = bairro_table[mask]
             
              
-            r   = int(bairro_row['count'].values[0])*7
+            r   = int(bairro_row['count'].values[0])* r_factor
             lat = bairro_row['lat'].values[0]
             lon = bairro_row['lon'].values[0]
 

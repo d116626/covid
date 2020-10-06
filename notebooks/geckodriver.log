@@ -3129,3 +3129,51 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 (firefox:41001): GLib-GObject-CRITICAL **: 00:26:51.065: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1601263618596	Marionette	INFO	Stopped listening on port 34135
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilegIu6W1/protections.sqlite
+1601331317117	geckodriver	INFO	Listening on 127.0.0.1:39197
+1601331317123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3a7HDo"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601331318447	Marionette	INFO	Listening on port 43889
+1601331318563	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:338401): GLib-GObject-CRITICAL **: 19:15:39.117: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1601331348032	Marionette	INFO	Stopped listening on port 43889
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile3a7HDo/protections.sqlite
+1601337621665	geckodriver	INFO	Listening on 127.0.0.1:53535
+1601337621670	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefEm4NS"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601337623138	Marionette	INFO	Listening on port 34011
+1601337623174	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:350782): GLib-GObject-CRITICAL **: 21:00:45.646: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1601337654851	Marionette	INFO	Stopped listening on port 34011
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilefEm4NS/protections.sqlite
+1601417717110	geckodriver	INFO	Listening on 127.0.0.1:53009
+1601417717134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHG9JcN"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601417718610	Marionette	INFO	Listening on port 42773
+1601417718638	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:415711): GLib-GObject-CRITICAL **: 19:15:40.755: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1601417749202	Marionette	INFO	Stopped listening on port 42773
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileHG9JcN/protections.sqlite
+1601424019602	geckodriver	INFO	Listening on 127.0.0.1:45527
+1601424019607	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9cNnMS"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601424021019	Marionette	INFO	Listening on port 41011
+1601424021313	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:420953): GLib-GObject-CRITICAL **: 21:00:42.844: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1601424052154	Marionette	INFO	Stopped listening on port 41011
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile9cNnMS/protections.sqlite
+1601510419298	geckodriver	INFO	Listening on 127.0.0.1:37899
+1601510419303	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRl7tL8"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1601510420627	Marionette	INFO	Listening on port 44689
+1601510420707	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601510450883	Marionette	INFO	Stopped listening on port 44689
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 697: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
