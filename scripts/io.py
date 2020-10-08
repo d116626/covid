@@ -250,7 +250,8 @@ def load_cities(brio_raw):
 
 
 def update_ms_data():
-
+    from subprocess import call 
+    
     path= os.getcwd().split('covid19')[0] + 'covid19/data/ministerio_da_saude' 
 
     
@@ -259,9 +260,9 @@ def update_ms_data():
     profile = webdriver.FirefoxProfile()
     profile.set_preference("browser.download.dir",path);
     profile.set_preference("browser.download.folderList",2);
-    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/x-rar-compressed,application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
     profile.set_preference("browser.download.manager.showWhenStarting",False);
-    profile.set_preference("browser.helperApps.neverAsk.openFile","application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
+    profile.set_preference("browser.helperApps.neverAsk.openFile","application/x-rar-compressed,application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
     profile.set_preference("browser.helperApps.alwaysAsk.force", False);
     profile.set_preference("browser.download.manager.useWindow", False);
     profile.set_preference("browser.download.manager.focusWhenStarting", False);
@@ -297,35 +298,35 @@ def update_ms_data():
     print('downloaded')
     today = datetime.today().strftime('%Y-%m-%d-%H-%M')    
     new_file = [file for file in now_files if file not in initial_files][0]
-    os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.xlsx')
-    print('renamed')
+
+    if new_file[-3:]=='rar':
+        call(f'unrar x {path}/{new_file} {path}', shell=True)
+        call(f'rm {path}/{new_file}', shell=True)
+        
+        now_files = listdir(path)
+        new_file = [file for file in now_files if file not in initial_files][0]
+        
+        os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.csv')
+        print('renamed')
+        
+        initial_time = time.time()
+
+        df = pd.read_csv(path+f'/{today}_ms_covid19.csv', sep=';')
+        df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')
+        
+        final_time = time.time()
+        
+        print(final_time - initial_time)
+
+        initial_time = time.time()
+
+        df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
+
+        final_time = time.time()
+        print(final_time - initial_time)
 
 
-
-    initial_time = time.time()
-
-    df = pd.read_excel(path+f'/{today}_ms_covid19.xlsx')
-    df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')
-      
-    final_time = time.time()
-    
-    print(final_time - initial_time)
-    
-    
-    # dd = pd.read_csv("../data/ministerio_da_saude/last_data_ms_covid19.csv")
-
-    # today = datetime.today().strftime('%Y-%m-%d')
-    # mask = dd['data']!=today
-    # dd = dd[mask]
-    # df = pd.concat([df,dd], 0)
-    initial_time = time.time()
-
-    df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
-    
-    final_time = time.time()
-    print(final_time - initial_time)
-
-    
-    print('saved')
-
+        print('saved')
+    else:
+        print('ERROOOOOOOOOOOOOOOOO')
 

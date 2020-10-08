@@ -1,7 +1,4 @@
 data/brIO/caso_full.csv
-data/ministerio_da_saude/2020-09-28-00-26_ms_covid19.xlsx
-data/ministerio_da_saude/2020-09-28-19-15_ms_covid19.xlsx
-data/ministerio_da_saude/2020-09-28-21-00_ms_covid19.xlsx
-data/ministerio_da_saude/2020-09-29-19-15_ms_covid19.xlsx
-data/ministerio_da_saude/2020-09-29-21-00_ms_covid19.xlsx
+data/ministerio_da_saude/2020-10-08-18-40_ms_covid19.csv
 data/ministerio_da_saude/last_data_ms_covid19.csv
+notebooks/HIST_PAINEL_COVIDBR_07out2020.csv

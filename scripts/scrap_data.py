@@ -244,7 +244,7 @@ def load_data():
     final_data = pd.concat([new_data,last_data],axis=0)
 
     
-    final_data['Date_last_updated_AEDT'] = pd.to_datetime(final_data['Date_last_updated_AEDT'])
+    # final_data['Date_last_updated_AEDT'] = pd.to_datetime(final_data['Date_last_updated_AEDT'])
     
     final_data.to_csv('../data/cumulative_data/{}.csv'.format(date_time), index=False)
     final_data.to_csv('../data/cumulative_data/covid_last.csv'.format(date_time), index=False)
