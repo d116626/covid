@@ -5509,3 +5509,43 @@ Traceback (most recent call last):
   File "/home/m/anaconda3/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 1229, in _build_naive
     naive = default.replace(**repl)
 ValueError: month must be in 1..12
+START
+Traceback (most recent call last):
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1856, in objects_to_datetime64ns
+    values, tz_parsed = conversion.datetime_to_datetime64(data)
+  File "pandas/_libs/tslibs/conversion.pyx", line 200, in pandas._libs.tslibs.conversion.datetime_to_datetime64
+TypeError: Unrecognized value type: <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 684, in <module>
+    main()
+  File "run.py", line 669, in main
+    run_corona_mundo()
+  File "run.py", line 44, in run_corona_mundo
+    new_data, df_final = scrap_data.load_data()
+  File "../scripts/scrap_data.py", line 247, in load_data
+    final_data['Date_last_updated_AEDT'] = pd.to_datetime(final_data['Date_last_updated_AEDT'])
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 724, in to_datetime
+    cache_array = _maybe_cache(arg, format, cache, convert_listlike)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 152, in _maybe_cache
+    cache_dates = convert_listlike(unique_dates, format)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 447, in _convert_listlike_datetimes
+    allow_object=True,
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1861, in objects_to_datetime64ns
+    raise e
+  File "/home/m/anaconda3/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1852, in objects_to_datetime64ns
+    require_iso8601=require_iso8601,
+  File "pandas/_libs/tslib.pyx", line 481, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 703, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 837, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslib.pyx", line 828, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslibs/parsing.pyx", line 228, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/home/m/anaconda3/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 1358, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 654, in parse
+    ret = self._build_naive(res, default)
+  File "/home/m/anaconda3/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 1229, in _build_naive
+    naive = default.replace(**repl)
+ValueError: month must be in 1..12
