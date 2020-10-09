@@ -60,6 +60,16 @@ body {
     text-align: center;
 }
 
+.support-top-heading-map {
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: #535252;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+}
+
 @media (min-width: 767px) {
     .support-top-details-text {
         text-align: left;
@@ -67,6 +77,10 @@ body {
     .support-top-heading {
         text-align: left;
         font-size: 60px;
+    }
+    .support-top-heading-map {
+        text-align: left;
+        font-size: 30px;
     }
     .support-top-details-text-2 {
         text-align: end;
