@@ -1159,3 +1159,19 @@ Traceback (most recent call last):
   File "../scripts/io.py", line 300, in update_ms_data
     new_file = [file for file in now_files if file not in initial_files][0]
 IndexError: list index out of range
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.27.0/geckodriver] found in cache
+START
+World Data Done
+IN
+OUT
+downloaded
+Traceback (most recent call last):
+  File "run.py", line 684, in <module>
+    main()
+  File "run.py", line 672, in main
+    run_corona_br()
+  File "run.py", line 106, in run_corona_br
+    io.update_ms_data()
+  File "../scripts/io.py", line 300, in update_ms_data
+    new_file = [file for file in now_files if file not in initial_files][0]
+IndexError: list index out of range
