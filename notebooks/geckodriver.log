@@ -3448,3 +3448,23 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1603152023742	Marionette	INFO	Listening on port 45787
 1603152023804	Marionette	WARN	TLS certificate errors will be ignored for this session
 1603152062039	Marionette	INFO	Stopped listening on port 45787
+1603232116844	geckodriver	INFO	Listening on 127.0.0.1:52009
+1603232116866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDwyKwW"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603232118238	Marionette	INFO	Listening on port 36943
+1603232118270	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:94795): GLib-GObject-CRITICAL **: 19:15:51.060: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1603232153975	Marionette	INFO	Stopped listening on port 36943
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileDwyKwW/protections.sqlite
+1603238422201	geckodriver	INFO	Listening on 127.0.0.1:51509
+1603238422206	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXetpsF"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603238423752	Marionette	INFO	Listening on port 36557
+1603238423774	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:98760): GLib-GObject-CRITICAL **: 21:01:00.244: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1603238464821	Marionette	INFO	Stopped listening on port 36557
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 697: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
