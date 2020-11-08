@@ -3966,3 +3966,19 @@ Index(['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes',
       dtype='object')
 Vale Data Done
 2020-11-07
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.28.0/geckodriver] found in cache
+START
+World Data Done
+IN
+OUT
+downloaded
+Traceback (most recent call last):
+  File "run.py", line 795, in <module>
+    main()
+  File "run.py", line 782, in main
+    run_corona_br()
+  File "run.py", line 153, in run_corona_br
+    io.update_ms_data()
+  File "../scripts/io.py", line 326, in update_ms_data
+    new_file = [file for file in now_files if file not in initial_files][0]
+IndexError: list index out of range
