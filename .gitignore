@@ -1,4 +1,5 @@
 data/brIO/caso_full.csv
+data/ministerio_da_saude/2020-11-14-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-10-22-19-06_ms_covid19.csv
 data/ministerio_da_saude/2020-10-23-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-10-25-19-15_ms_covid19.csv
@@ -11,7 +12,6 @@ data/ministerio_da_saude/2020-11-10-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-11-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-12-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-13-19-15_ms_covid19.csv
-data/ministerio_da_saude/2020-11-14-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-16-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-17-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-18-19-15_ms_covid19.csv
@@ -21,4 +21,5 @@ data/ministerio_da_saude/2020-11-21-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-22-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-23-19-15_ms_covid19.csv
 data/ministerio_da_saude/2020-11-24-19-15_ms_covid19.csv
+data/ministerio_da_saude/2020-11-25-19-15_ms_covid19.csv
 data/ministerio_da_saude/last_data_ms_covid19.csv
