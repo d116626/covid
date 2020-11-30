@@ -15004,3 +15004,183 @@ Index(['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes',
 0it [00:00, ?it/s]1it [00:05,  5.23s/it]
 Vale Data Done
 2020-11-25
+START
+World Data Done
+[WDM] - Getting latest mozilla release info for v0.28.0
+[WDM] - Trying to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz
+[WDM] - Driver has been saved in cache [/home/m/.wdm/drivers/geckodriver/linux64/v0.28.0]
+IN
+OUT
+downloaded
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 782 main
+run_corona_br()
+
+run.py 153 run_corona_br
+io.update_ms_data()
+
+io.py 326 update_ms_data
+new_file = [file for file in now_files if file not in initial_files][0]
+
+IndexError:
+list index out of range
+START
+
+-------------------------------------------------------------------------------
+connection.py 159 _new_conn
+conn = connection.create_connection(
+
+connection.py 61 create_connection
+for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+
+socket.py 918 getaddrinfo
+for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+
+socket.gaierror:
+-3
+Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+connectionpool.py 670 urlopen
+httplib_response = self._make_request(
+
+connectionpool.py 381 _make_request
+self._validate_conn(conn)
+
+connectionpool.py 976 _validate_conn
+conn.connect()
+
+connection.py 308 connect
+conn = self._new_conn()
+
+connection.py 171 _new_conn
+raise NewConnectionError(
+
+urllib3.exceptions.NewConnectionError:
+<urllib3.connection.HTTPSConnection object at 0x7fed0232ca30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+adapters.py 439 send
+resp = conn.urlopen(
+
+connectionpool.py 724 urlopen
+retries = retries.increment(
+
+retry.py 439 increment
+raise MaxRetryError(_pool, url, error or ResponseError(cause))
+
+urllib3.exceptions.MaxRetryError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fed0232ca30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 779 main
+run_corona_mundo()
+
+run.py 46 run_corona_mundo
+new_data, df_final = scrap_data.load_data()
+
+scrap_data.py 27 load_data
+response = get(worldometers, headers=headers)
+
+api.py 76 get
+return request('get', url, params=params, **kwargs)
+
+api.py 61 request
+return session.request(method=method, url=url, **kwargs)
+
+sessions.py 530 request
+resp = self.send(prep, **send_kwargs)
+
+sessions.py 643 send
+r = adapter.send(request, **kwargs)
+
+adapters.py 516 send
+raise ConnectionError(e, request=request)
+
+requests.exceptions.ConnectionError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fed0232ca30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+START
+
+-------------------------------------------------------------------------------
+connection.py 159 _new_conn
+conn = connection.create_connection(
+
+connection.py 61 create_connection
+for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+
+socket.py 918 getaddrinfo
+for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+
+socket.gaierror:
+-3
+Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+connectionpool.py 670 urlopen
+httplib_response = self._make_request(
+
+connectionpool.py 381 _make_request
+self._validate_conn(conn)
+
+connectionpool.py 976 _validate_conn
+conn.connect()
+
+connection.py 308 connect
+conn = self._new_conn()
+
+connection.py 171 _new_conn
+raise NewConnectionError(
+
+urllib3.exceptions.NewConnectionError:
+<urllib3.connection.HTTPSConnection object at 0x7fab20a4e3d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+adapters.py 439 send
+resp = conn.urlopen(
+
+connectionpool.py 724 urlopen
+retries = retries.increment(
+
+retry.py 439 increment
+raise MaxRetryError(_pool, url, error or ResponseError(cause))
+
+urllib3.exceptions.MaxRetryError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fab20a4e3d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 779 main
+run_corona_mundo()
+
+run.py 46 run_corona_mundo
+new_data, df_final = scrap_data.load_data()
+
+scrap_data.py 27 load_data
+response = get(worldometers, headers=headers)
+
+api.py 76 get
+return request('get', url, params=params, **kwargs)
+
+api.py 61 request
+return session.request(method=method, url=url, **kwargs)
+
+sessions.py 530 request
+resp = self.send(prep, **send_kwargs)
+
+sessions.py 643 send
+r = adapter.send(request, **kwargs)
+
+adapters.py 516 send
+raise ConnectionError(e, request=request)
+
+requests.exceptions.ConnectionError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fab20a4e3d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
