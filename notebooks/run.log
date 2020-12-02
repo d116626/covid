@@ -15936,3 +15936,14 @@ DONE
 BR Map Done
 0it [00:00, ?it/s]1it [00:00,  3.75it/s]1it [00:06,  6.10s/it]
 0it [00:00, ?it/s]1it [00:06,  6.47s/it]
+0it [00:00, ?it/s]1it [00:04,  4.80s/it]
+0it [00:00, ?it/s]1it [00:06,  6.99s/it]
+0it [00:00, ?it/s]1it [00:03,  3.76s/it]
+Index(['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes',
+       'var_obitos'],
+      dtype='object')
+0it [00:00, ?it/s]1it [00:04,  4.84s/it]
+0it [00:00, ?it/s]1it [00:05,  5.76s/it]
+0it [00:00, ?it/s]1it [00:05,  5.76s/it]
+Vale Data Done
+2020-12-02
