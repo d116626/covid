@@ -18974,3 +18974,81 @@ Index(['data', 'drs', 'ev_pandemia', 'var_casos', 'var_internacoes',
 0it [00:00, ?it/s]1it [00:04,  4.19s/it]
 Vale Data Done
 2020-12-07
+START
+
+-------------------------------------------------------------------------------
+connection.py 158 _new_conn
+conn = connection.create_connection(
+
+connection.py 57 create_connection
+for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+
+socket.py 918 getaddrinfo
+for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+
+socket.gaierror:
+-3
+Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+connectionpool.py 597 urlopen
+httplib_response = self._make_request(conn, method, url,
+
+connectionpool.py 343 _make_request
+self._validate_conn(conn)
+
+connectionpool.py 839 _validate_conn
+conn.connect()
+
+connection.py 301 connect
+conn = self._new_conn()
+
+connection.py 167 _new_conn
+raise NewConnectionError(
+
+urllib3.exceptions.NewConnectionError:
+<urllib3.connection.VerifiedHTTPSConnection object at 0x7f97cc6d3c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+-------------------------------------------------------------------------------
+adapters.py 439 send
+resp = conn.urlopen(
+
+connectionpool.py 637 urlopen
+retries = retries.increment(method, url, error=e, _pool=self,
+
+retry.py 399 increment
+raise MaxRetryError(_pool, url, error or ResponseError(cause))
+
+urllib3.exceptions.MaxRetryError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f97cc6d3c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 779 main
+run_corona_mundo()
+
+run.py 46 run_corona_mundo
+new_data, df_final = scrap_data.load_data()
+
+scrap_data.py 27 load_data
+response = get(worldometers, headers=headers)
+
+api.py 76 get
+return request('get', url, params=params, **kwargs)
+
+api.py 61 request
+return session.request(method=method, url=url, **kwargs)
+
+sessions.py 530 request
+resp = self.send(prep, **send_kwargs)
+
+sessions.py 643 send
+r = adapter.send(request, **kwargs)
+
+adapters.py 516 send
+raise ConnectionError(e, request=request)
+
+requests.exceptions.ConnectionError:
+HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f97cc6d3c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
