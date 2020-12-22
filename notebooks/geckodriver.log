@@ -4052,3 +4052,27 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 (/usr/lib/firefox/firefox:10415): GLib-GObject-CRITICAL **: 19:15:11.606: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 1608588948463	Marionette	INFO	Stopped listening on port 45819
+1608675309230	geckodriver	INFO	Listening on 127.0.0.1:49541
+1608675309239	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileN2KDhn"
+*** You are running in headless mode.
+
+(firefox:21522): GLib-GObject-WARNING **: 19:15:09.457: invalid (NULL) pointer instance
+
+(firefox:21522): GLib-GObject-CRITICAL **: 19:15:09.457: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:21582): GLib-GObject-WARNING **: 19:15:09.839: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:21582): GLib-GObject-CRITICAL **: 19:15:09.839: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:21603): GLib-GObject-WARNING **: 19:15:09.959: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:21603): GLib-GObject-CRITICAL **: 19:15:09.959: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1608675310490	Marionette	INFO	Listening on port 33107
+1608675310578	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:21686): GLib-GObject-WARNING **: 19:15:10.789: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:21686): GLib-GObject-CRITICAL **: 19:15:10.789: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1608675345929	Marionette	INFO	Stopped listening on port 33107
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileN2KDhn/protections.sqlite
