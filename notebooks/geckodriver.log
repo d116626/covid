@@ -4225,3 +4225,27 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (/usr/lib/firefox/firefox:63269): GLib-GObject-CRITICAL **: 19:15:11.196: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 1609539344527	Marionette	INFO	Stopped listening on port 46109
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiletmOirx/protections.sqlite
+1609625714452	geckodriver	INFO	Listening on 127.0.0.1:41753
+1609625714461	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekLQKFs"
+*** You are running in headless mode.
+
+(firefox:95703): GLib-GObject-WARNING **: 19:15:14.788: invalid (NULL) pointer instance
+
+(firefox:95703): GLib-GObject-CRITICAL **: 19:15:14.788: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:95755): GLib-GObject-WARNING **: 19:15:15.323: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:95755): GLib-GObject-CRITICAL **: 19:15:15.323: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:95782): GLib-GObject-WARNING **: 19:15:15.556: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:95782): GLib-GObject-CRITICAL **: 19:15:15.556: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:95858): GLib-GObject-WARNING **: 19:15:16.973: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:95858): GLib-GObject-CRITICAL **: 19:15:16.973: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1609625717011	Marionette	INFO	Listening on port 45133
+1609625717117	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609625759174	Marionette	INFO	Stopped listening on port 45133
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilekLQKFs/protections.sqlite
