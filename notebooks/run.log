@@ -24026,3 +24026,25 @@ new_file = [file for file in now_files if file not in initial_files][0]
 
 IndexError:
 list index out of range
+START
+World Data Done
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.28.0/geckodriver] found in cache
+IN
+OUT
+downloaded
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 782 main
+run_corona_br()
+
+run.py 153 run_corona_br
+io.update_ms_data()
+
+io.py 326 update_ms_data
+new_file = [file for file in now_files if file not in initial_files][0]
+
+IndexError:
+list index out of range
