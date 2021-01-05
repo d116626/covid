@@ -4300,3 +4300,27 @@ JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.js
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1609884910430	geckodriver	INFO	Listening on 127.0.0.1:47955
+1609884910440	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaWZPe8"
+*** You are running in headless mode.
+
+(firefox:43216): GLib-GObject-WARNING **: 19:15:10.693: invalid (NULL) pointer instance
+
+(firefox:43216): GLib-GObject-CRITICAL **: 19:15:10.693: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:43284): GLib-GObject-WARNING **: 19:15:11.106: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:43284): GLib-GObject-CRITICAL **: 19:15:11.106: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:43307): GLib-GObject-WARNING **: 19:15:11.262: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:43307): GLib-GObject-CRITICAL **: 19:15:11.263: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609884911980	Marionette	INFO	Listening on port 43793
+
+(/usr/lib/firefox/firefox:43383): GLib-GObject-WARNING **: 19:15:12.081: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:43383): GLib-GObject-CRITICAL **: 19:15:12.081: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1609884912100	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609884944362	Marionette	INFO	Stopped listening on port 43793
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
