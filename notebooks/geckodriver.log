@@ -4324,3 +4324,30 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1609884912100	Marionette	WARN	TLS certificate errors will be ignored for this session
 1609884944362	Marionette	INFO	Stopped listening on port 43793
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1609971310648	geckodriver	INFO	Listening on 127.0.0.1:34925
+1609971310660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledTHToO"
+*** You are running in headless mode.
+
+(firefox:6133): GLib-GObject-WARNING **: 19:15:10.968: invalid (NULL) pointer instance
+
+(firefox:6133): GLib-GObject-CRITICAL **: 19:15:10.968: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:6194): GLib-GObject-WARNING **: 19:15:11.421: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6194): GLib-GObject-CRITICAL **: 19:15:11.421: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:6215): GLib-GObject-WARNING **: 19:15:11.593: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6215): GLib-GObject-CRITICAL **: 19:15:11.593: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1609971312406	Marionette	INFO	Listening on port 44943
+
+(/usr/lib/firefox/firefox:6290): GLib-GObject-WARNING **: 19:15:12.513: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:6290): GLib-GObject-CRITICAL **: 19:15:12.513: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1609971312547	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609971347853	Marionette	INFO	Stopped listening on port 44943
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiledTHToO/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
