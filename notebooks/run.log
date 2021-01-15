@@ -24354,3 +24354,45 @@ raise ConnectionError(e, request=request)
 
 requests.exceptions.ConnectionError:
 HTTPSConnectionPool(host='www.worldometers.info', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f3ce081a2b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+START
+World Data Done
+[WDM] - Driver [/home/m/.wdm/drivers/geckodriver/linux64/v0.29.0/geckodriver] found in cache
+IN
+OUT
+downloaded
+HIST_PAINEL_COVIDBR_14jan2021.csv
+renamed
+
+-------------------------------------------------------------------------------
+run.py 795 <module>
+main()
+
+run.py 782 main
+run_corona_br()
+
+run.py 153 run_corona_br
+io.update_ms_data()
+
+io.py 370 update_ms_data
+df = pd.read_csv(path + f"/{today}_ms_covid19.csv", sep=";")
+
+parsers.py 686 read_csv
+return _read(filepath_or_buffer, kwds)
+
+parsers.py 452 _read
+parser = TextFileReader(fp_or_buf, **kwds)
+
+parsers.py 946 __init__
+self._make_engine(self.engine)
+
+parsers.py 1178 _make_engine
+self._engine = CParserWrapper(self.f, **self.options)
+
+parsers.py 2008 __init__
+self._reader = parsers.TextReader(src, **kwds)
+
+parsers.pyx 540 pandas._libs.parsers.TextReader.__cinit__
+
+
+pandas.errors.EmptyDataError:
+No columns to parse from file
