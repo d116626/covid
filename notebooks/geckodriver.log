@@ -4596,3 +4596,29 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (firefox:46186): GLib-GObject-CRITICAL **: 19:16:30.218: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1610749154071	Marionette	INFO	Stopped listening on port 40155
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilevJfLKd/protections.sqlite
+1610835310187	geckodriver	INFO	Listening on 127.0.0.1:49157
+1610835311192	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegiyolV"
+*** You are running in headless mode.
+
+(firefox:44253): GLib-GObject-WARNING **: 19:15:11.450: invalid (NULL) pointer instance
+
+(firefox:44253): GLib-GObject-CRITICAL **: 19:15:11.450: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:44326): GLib-GObject-WARNING **: 19:15:11.811: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:44326): GLib-GObject-CRITICAL **: 19:15:11.811: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:44347): GLib-GObject-WARNING **: 19:15:11.941: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:44347): GLib-GObject-CRITICAL **: 19:15:11.941: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610835312550	Marionette	INFO	Listening on port 37005
+1610835312618	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:44447): GLib-GObject-WARNING **: 19:15:12.782: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:44447): GLib-GObject-CRITICAL **: 19:15:12.782: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(firefox:44253): GLib-GObject-CRITICAL **: 19:16:30.657: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1610835554966	Marionette	INFO	Stopped listening on port 37005
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilegiyolV/protections.sqlite
