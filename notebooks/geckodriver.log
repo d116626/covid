@@ -5184,3 +5184,20 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1613081713450	Marionette	WARN	TLS certificate errors will be ignored for this session
 1613081713462	Marionette	ERROR	[15] No reply from Marionette:Register
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613168111132	geckodriver	INFO	Listening on 127.0.0.1:41545
+1613168111154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVziV6a"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libGLESv2 glGetString returned null
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x3e9b
+[GFX1-]: PCI candidate 0x10de/0x1c8c
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613168112591	Marionette	INFO	Listening on port 38229
+1613168112750	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613168112762	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(firefox:66194): GLib-GObject-CRITICAL **: 19:16:31.760: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613168354685	Marionette	INFO	Stopped listening on port 38229
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileVziV6a/protections.sqlite
