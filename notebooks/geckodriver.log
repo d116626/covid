@@ -5218,3 +5218,23 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (firefox:105251): GLib-GObject-CRITICAL **: 19:16:29.095: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1613254752706	Marionette	INFO	Stopped listening on port 40725
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileQyirZh/protections.sqlite
+1613340909265	geckodriver	INFO	Listening on 127.0.0.1:36265
+1613340909277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBxmAQe"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libGLESv2 glGetString returned null
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x3e9b
+[GFX1-]: PCI candidate 0x10de/0x1c8c
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613340910435	Marionette	INFO	Listening on port 43623
+1613340910496	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613340910507	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(firefox:133408): GLib-GObject-CRITICAL **: 19:16:29.335: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613341152321	Marionette	INFO	Stopped listening on port 43623
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileBxmAQe/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
