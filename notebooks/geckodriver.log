@@ -5289,3 +5289,29 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (firefox:35522): GLib-GObject-CRITICAL **: 19:16:30.004: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1613600353604	Marionette	INFO	Stopped listening on port 34417
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileiFAN7y/protections.sqlite
+1613686510397	geckodriver	INFO	Listening on 127.0.0.1:46917
+1613686510414	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilednvg30"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libGLESv2 glGetString returned null
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x3e9b
+[GFX1-]: PCI candidate 0x10de/0x1c8c
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613686511760	Marionette	INFO	Listening on port 35225
+1613686511833	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613686511841	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(firefox:128600): GLib-GObject-CRITICAL **: 19:16:31.410: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613686754026	Marionette	INFO	Stopped listening on port 35225
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofilednvg30/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
