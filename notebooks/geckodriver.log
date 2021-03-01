@@ -5468,3 +5468,27 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (firefox:52516): GLib-GObject-CRITICAL **: 19:16:32.533: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1614464353456	Marionette	INFO	Stopped listening on port 39781
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileubiXJL/protections.sqlite
+1614550511018	geckodriver	INFO	Listening on 127.0.0.1:37245
+1614550511029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5lKo6q"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libGLESv2 glGetString returned null
+[GFX1-]: More than 1 GPU detected via PCI, cannot deduce vendor
+[GFX1-]: PCI candidate 0x8086/0x3e9b
+[GFX1-]: PCI candidate 0x10de/0x1c8c
+
+(/usr/lib/firefox/firefox:104761): GLib-GObject-CRITICAL **: 19:15:11.892: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:104782): GLib-GObject-CRITICAL **: 19:15:12.051: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614550512560	Marionette	INFO	Listening on port 42275
+1614550512708	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:104860): GLib-GObject-CRITICAL **: 19:15:12.849: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(firefox:104707): GLib-GObject-CRITICAL **: 19:16:32.441: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1614550754609	Marionette	INFO	Stopped listening on port 42275
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile5lKo6q/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
