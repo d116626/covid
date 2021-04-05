@@ -6206,3 +6206,27 @@ JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.js
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1617574511096	geckodriver	INFO	Listening on 127.0.0.1:44311
+1617574511110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledFvQdl"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: eglCreateContext returned an error
+
+(/usr/lib/firefox/firefox:10841): GLib-GObject-CRITICAL **: 19:15:11.812: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:10862): GLib-GObject-CRITICAL **: 19:15:11.935: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617574512346	Marionette	INFO	Listening on port 41667
+1617574512429	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:10953): GLib-GObject-CRITICAL **: 19:15:12.801: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(firefox:10789): GLib-GObject-CRITICAL **: 19:16:34.690: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1617574754294	Marionette	INFO	Stopped listening on port 41667
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofiledFvQdl/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
