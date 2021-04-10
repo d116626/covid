@@ -1,6 +1,4 @@
 data/brIO/caso_full.csv
-data/ministerio_da_saude/2021-03-01-19-19_ms_covid19.csv
-data/ministerio_da_saude/2021-03-15-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-02-16-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-02-17-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-02-18-19-19_ms_covid19.csv
@@ -40,7 +38,6 @@ data/ministerio_da_saude/2021-03-25-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-03-26-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-03-27-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-03-28-19-19_ms_covid19.csv
-data/ministerio_da_saude/2021-03-29-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-03-30-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-03-31-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-04-01-19-19_ms_covid19.csv
@@ -51,4 +48,8 @@ data/ministerio_da_saude/2021-04-05-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-04-06-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-04-07-19-19_ms_covid19.csv
 data/ministerio_da_saude/2021-04-08-19-19_ms_covid19.csv
+data/ministerio_da_saude/2021-04-09-19-19_ms_covid19.csv
 data/ministerio_da_saude/last_data_ms_covid19.csv
+data/ministerio_da_saude/2021-03-01-19-19_ms_covid19.csv
+data/ministerio_da_saude/2021-03-15-19-19_ms_covid19.csv
+data/ministerio_da_saude/2021-03-29-19-19_ms_covid19.csv
