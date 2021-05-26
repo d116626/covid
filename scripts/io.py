@@ -328,61 +328,32 @@ def update_ms_data():
     print(new_file)
 
     if new_file[-3:] == "rar":
-        call(f"unrar x {path}/{new_file} {path}", shell=True)
         call(f"rm {path}/{new_file}", shell=True)
+        call(f"unrar x {path}/{new_file} {path}", shell=True)
 
-        now_files = listdir(path)
-        new_file = [file for file in now_files if file not in initial_files][0]
+    now_files = listdir(path)
+    new_file = [file for file in now_files if file not in initial_files][0]
+    os.rename(path + f"/{new_file}", path + f"/{today}_ms_covid19.csv")
+    print("renamed")
 
-        os.rename(path + f"/{new_file}", path + f"/{today}_ms_covid19.csv")
-        print("renamed")
+    initial_time = time.time()
 
-        initial_time = time.time()
+    df = pd.read_csv(path + f"/{today}_ms_covid19.csv", sep=";")
+    df["last_update"] = datetime.today().strftime("%Y-%m-%d %H:%M")
 
-        df = pd.read_csv(path + f"/{today}_ms_covid19.csv", sep=";")
-        df["last_update"] = datetime.today().strftime("%Y-%m-%d %H:%M")
+    final_time = time.time()
 
-        final_time = time.time()
+    print(final_time - initial_time)
 
-        print(final_time - initial_time)
+    initial_time = time.time()
 
-        initial_time = time.time()
+    df.to_csv(
+        "../data/ministerio_da_saude/last_data_ms_covid19.csv",
+        index=False,
+        encoding="utf-8",
+    )
 
-        df.to_csv(
-            "../data/ministerio_da_saude/last_data_ms_covid19.csv",
-            index=False,
-            encoding="utf-8",
-        )
+    final_time = time.time()
+    print(final_time - initial_time)
 
-        final_time = time.time()
-        print(final_time - initial_time)
-
-        print("saved")
-    else:
-        now_files = listdir(path)
-        new_file = [file for file in now_files if file not in initial_files][0]
-
-        os.rename(path + f"/{new_file}", path + f"/{today}_ms_covid19.csv")
-        print("renamed")
-
-        initial_time = time.time()
-
-        df = pd.read_csv(path + f"/{today}_ms_covid19.csv", sep=";")
-        df["last_update"] = datetime.today().strftime("%Y-%m-%d %H:%M")
-
-        final_time = time.time()
-
-        print(final_time - initial_time)
-
-        initial_time = time.time()
-
-        df.to_csv(
-            "../data/ministerio_da_saude/last_data_ms_covid19.csv",
-            index=False,
-            encoding="utf-8",
-        )
-
-        final_time = time.time()
-        print(final_time - initial_time)
-
-        print("saved")
+    print("saved")
