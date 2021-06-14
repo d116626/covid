@@ -7485,3 +7485,19 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (firefox:73550): GLib-GObject-CRITICAL **: 19:16:14.035: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1623536352982	Marionette	INFO	Stopped listening on port 38953
 JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofile8kJuip/protections.sqlite
+1623622510660	geckodriver	INFO	Listening on 127.0.0.1:59907
+1623622510682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRzRA5I"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: eglCreateContext returned an error
+1623622511011	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRzRA5I/search.json.mozlz4", (void 0)))
+1623622511911	Marionette	INFO	Listening on port 38133
+1623622512002	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:7285): GLib-GObject-CRITICAL **: 19:16:15.095: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1623622754081	Marionette	INFO	Stopped listening on port 38133
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileRzRA5I/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
